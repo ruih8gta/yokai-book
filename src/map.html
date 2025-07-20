@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖怪マップ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map.style.css">
+</head>
+<body>
+    <header>
+        <h1>日本妖怪マップ</h1>
+        <nav>
+            <a href="index.html">妖怪図鑑を見る</a>
+        </nav>
+    </header>
+    <main>
+        <div id="map-container">
+            <!-- ここにSVGの日本地図がJavaScriptによって挿入されます -->
+        </div>
+        <div id="yokai-card-container" class="hidden">
+            <!-- 妖怪カードがここに表示されます -->
+        </div>
+    </main>
+    <script src="map.js"></script>
+    <footer>
+        <p>&copy; 2025 妖怪マップ</p>
+    </footer>
+</body>
+</html>

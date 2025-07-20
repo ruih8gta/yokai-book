@@ -1,0 +1,109 @@
+/* 基本スタイル */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Sawarabi Mincho', serif;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column; /* ヘッダー、メイン、フッターを縦に並べる */
+}
+
+/* ヘッダー */
+header {
+    background-color: #1a1a1a;
+    padding: 15px 30px;
+    text-align: center;
+    border-bottom: 2px solid #8a2be2;
+    flex-shrink: 0; /* 縮まないように */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* ナビゲーション */
+header nav {
+    margin-top: 5px;
+}
+
+header nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #8a2be2;
+}
+
+/* メインコンテンツ */
+main {
+    position: relative; /* 子要素の配置の基準にする */
+    width: 100%;
+    flex-grow: 1; /* 残りのスペースを全て占める */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 地図のコンテナ */
+#map-container {
+    width: 70%; /* 横幅を少し狭める */
+    height: 70%; /* 高さを少し狭める */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#japan-map {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto; /* 幅を自動調整 */
+    height: auto; /* 高さを自動調整 */
+    stroke: #f0f0f0; /* 境界線の色 */
+    stroke-width: 0.5; /* 線を少し細く */
+    fill: #4a4a4a; /* 都道府県の塗りつぶし色 */
+}
+
+/* 都道府県のパスにマウスが乗った時のスタイル */
+#japan-map .prefecture:hover {
+    fill: #8a2be2; /* アクセントカラーで塗りつぶす */
+    cursor: pointer;
+}
+
+/* 妖怪カードのコンテナ */
+#yokai-card-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #3d3d3d;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 1px solid #4a4a4a;
+}
+
+/* 非表示クラス */
+.hidden {
+    display: none;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #4a4a4a;
+    flex-shrink: 0; /* 縮まないように */
+}
