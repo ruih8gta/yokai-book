@@ -18,6 +18,31 @@ document.addEventListener('DOMContentLoaded', () => {
             name: '一つ目小僧',
             image: 'img/hitotsume-kozo.png',
             description: '額に一つだけ目がある子供の姿の妖怪。人を驚かすのが好きだが、悪さはしない。'
+        },
+        'chiba': {
+            name: '二口女',
+            image: 'img/futakuchi-onna.png',
+            description: '後頭部にもう一つの口を持つ女性の妖怪。'
+        },
+        'ibaraki': {
+            name: 'イクチ',
+            image: 'img/ikuchi.png',
+            description: 'うなぎのような姿をした海の妖怪。'
+        },
+        'tochigi': {
+            name: '九尾の狐',
+            image: 'img/kyubi-no-kitsune.png',
+            description: '九本の尾を持つ強力な狐の妖怪。'
+        },
+        'gunma': {
+            name: '天狗',
+            image: 'img/tengu.png',
+            description: '山に住むと言われる、赤ら顔で鼻の長い妖怪。'
+        },
+        'saitama': {
+            name: '夜道怪',
+            image: 'img/yadokai.png',
+            description: '夜道を歩く人の前に現れる一つ目の妖怪。'
         }
     };
 
