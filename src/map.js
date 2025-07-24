@@ -1,50 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mapContainer = document.getElementById('map-container');
     const yokaiCardContainer = document.getElementById('yokai-card-container');
+    let yokaiData = {}; // 妖怪データを格納するオブジェクト
 
-    // 妖怪のデータ
-    const yokaiData = {
-        'saga': {
-            name: '河童',
-            image: 'img/kappa.png',
-            description: '川や沼に住むと言われる妖怪。頭の皿が乾くと力を失う。'
-        },
-        'aichi': {
-            name: 'ろくろ首',
-            image: 'img/rokurokubi.png',
-            description: '首が長く伸びる妖怪。昼間は普通の人間と変わらない姿をしていることが多い。'
-        },
-        'kyoto': {
-            name: '一つ目小僧',
-            image: 'img/hitotsume-kozo.png',
-            description: '額に一つだけ目がある子供の姿の妖怪。人を驚かすのが好きだが、悪さはしない。'
-        },
-        'chiba': {
-            name: '二口女',
-            image: 'img/futakuchi-onna.png',
-            description: '後頭部にもう一つの口を持つ女性の妖怪。'
-        },
-        'ibaraki': {
-            name: 'イクチ',
-            image: 'img/ikuchi.png',
-            description: 'うなぎのような姿をした海の妖怪。'
-        },
-        'tochigi': {
-            name: '九尾の狐',
-            image: 'img/kyubi-no-kitsune.png',
-            description: '九本の尾を持つ強力な狐の妖怪。'
-        },
-        'gunma': {
-            name: '天狗',
-            image: 'img/tengu.png',
-            description: '山に住むと言われる、赤ら顔で鼻の長い妖怪。'
-        },
-        'saitama': {
-            name: '夜道怪',
-            image: 'img/yadokai.png',
-            description: '夜道を歩く人の前に現れる一つ目の妖怪。'
-        }
-    };
+    // JSONファイルから妖怪データを取得
+    fetch('yokai.json')
+        .then(response => response.json())
+        .then(data => {
+            // 扱いやすいように、prefecture_idをキーにしたオブジェクトに変換
+            data.forEach(yokai => {
+                yokaiData[yokai.prefecture_id] = yokai;
+            });
+            console.log('妖怪データをAPIから取得しました。', yokaiData);
+        })
+        .catch(error => console.error('妖怪データの取得に失敗しました:', error));
+
 
     // SVG地図データを読み込んで表示
     fetch('map-full.svg')

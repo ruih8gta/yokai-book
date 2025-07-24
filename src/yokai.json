@@ -1,0 +1,378 @@
+[
+  {
+    "id": 1,
+    "name": "コロポックル",
+    "image": "img/koropokkuru.png",
+    "description": "アイヌの伝承に登場する小人。",
+    "region": "北海道・東北",
+    "prefecture_id": "hokkaido"
+  },
+  {
+    "id": 2,
+    "name": "赤舌",
+    "image": "img/akashita.png",
+    "description": "津軽地方に伝わる妖怪。",
+    "region": "北海道・東北",
+    "prefecture_id": "aomori"
+  },
+  {
+    "id": 3,
+    "name": "座敷童子",
+    "image": "img/zashiki-warashi.png",
+    "description": "岩手県に伝わる、家に富をもたらすという子供の妖怪。",
+    "region": "北海道・東北",
+    "prefecture_id": "iwate"
+  },
+  {
+    "id": 4,
+    "name": "提灯小僧",
+    "image": "img/chochin-kozo.png",
+    "description": "提灯を持った子供の姿の妖怪。",
+    "region": "北海道・東北",
+    "prefecture_id": "miyagi"
+  },
+  {
+    "id": 5,
+    "name": "なまはげ",
+    "image": "img/namahage.png",
+    "description": "秋田県の民俗行事に登場する神の使い。",
+    "region": "北海道・東北",
+    "prefecture_id": "akita"
+  },
+  {
+    "id": 6,
+    "name": "雪女",
+    "image": "img/yuki-onna.png",
+    "description": "雪の日に現れるとされる美しい女性の妖怪。",
+    "region": "北海道・東北",
+    "prefecture_id": "yamagata"
+  },
+  {
+    "id": 7,
+    "name": "朱の盆",
+    "image": "img/shunobon.png",
+    "description": "福島県に伝わる顔の赤い妖怪。",
+    "region": "北海道・東北",
+    "prefecture_id": "fukushima"
+  },
+  {
+    "id": 8,
+    "name": "イクチ",
+    "image": "img/ikuchi.png",
+    "description": "茨城県の海に現れるという、うなぎのような長い妖怪。",
+    "region": "関東",
+    "prefecture_id": "ibaraki"
+  },
+  {
+    "id": 9,
+    "name": "九尾の狐",
+    "image": "img/kyubi-no-kitsune.png",
+    "description": "栃木県の那須野に現れたという、9本の尾を持つ狐の妖怪。",
+    "region": "関東",
+    "prefecture_id": "tochigi"
+  },
+  {
+    "id": 10,
+    "name": "天狗",
+    "image": "img/tengu.png",
+    "description": "群馬県の山に住むという、神通力を持つ妖怪。",
+    "region": "関東",
+    "prefecture_id": "gunma"
+  },
+  {
+    "id": 11,
+    "name": "夜道怪",
+    "image": "img/yadokai.png",
+    "description": "埼玉県に伝わる、一つ目の巨人。",
+    "region": "関東",
+    "prefecture_id": "saitama"
+  },
+  {
+    "id": 12,
+    "name": "二口女",
+    "image": "img/futakuchi-onna.png",
+    "description": "千葉県に伝わる、後頭部に口を持つ女性の妖怪。",
+    "region": "関東",
+    "prefecture_id": "chiba"
+  },
+  {
+    "id": 13,
+    "name": "一つ目小僧",
+    "image": "img/hitotsume-kozo.png",
+    "description": "額に一つだけ目がある子供の姿の妖怪。",
+    "region": "関東",
+    "prefecture_id": "tokyo"
+  },
+  {
+    "id": 14,
+    "name": "舞首",
+    "image": "img/maikubi.png",
+    "description": "神奈川県の海上に現れるという、舞う3つの首の妖怪。",
+    "region": "関東",
+    "prefecture_id": "kanagawa"
+  },
+  {
+    "id": 15,
+    "name": "団三郎狸",
+    "image": "img/danzaburou-danuki.png",
+    "description": "新潟県の佐渡島に伝わる化け狸。",
+    "region": "中部",
+    "prefecture_id": "niigata"
+  },
+  {
+    "id": 16,
+    "name": "人形神",
+    "image": "img/ningyoshin.png",
+    "description": "富山県の神社に祀られている人形の妖怪。",
+    "region": "中部",
+    "prefecture_id": "toyama"
+  },
+  {
+    "id": 17,
+    "name": "アマメハギ",
+    "image": "img/amamehagi.png",
+    "description": "石川県の囲炉裏のそばに現れるという妖怪。",
+    "region": "中部",
+    "prefecture_id": "ishikawa"
+  },
+  {
+    "id": 18,
+    "name": "八百比丘尼",
+    "image": "img/yao-bikuni.png",
+    "description": "福井県の海岸に現れるという、人魚の肉を食べて不老不死になった比丘尼。",
+    "region": "中部",
+    "prefecture_id": "fukui"
+  },
+  {
+    "id": 19,
+    "name": "蟹坊主",
+    "image": "img/kani-bozu.png",
+    "description": "山梨県の寺に現れたという巨大な蟹の妖怪。",
+    "region": "中部",
+    "prefecture_id": "yamanashi"
+  },
+  {
+    "id": 20,
+    "name": "山彦",
+    "image": "img/yamabiko.png",
+    "description": "長野県の山で音を反射させるとされる妖怪。",
+    "region": "中部",
+    "prefecture_id": "nagano"
+  },
+  {
+    "id": 21,
+    "name": "両面宿儺",
+    "image": "img/ryomen-sukuna.png",
+    "description": "岐阜県の洞窟に住んでいたとされる、2つの顔と4本の手足を持つ異形の存在。",
+    "region": "中部",
+    "prefecture_id": "gifu"
+  },
+  {
+    "id": 22,
+    "name": "だいだらぼっち",
+    "image": "img/daidarabotchi.png",
+    "description": "静岡県で山や湖を作ったとされる巨人。",
+    "region": "中部",
+    "prefecture_id": "shizuoka"
+  },
+  {
+    "id": 23,
+    "name": "おとら狐",
+    "image": "img/otora-gitsune.png",
+    "description": "愛知県の名古屋の街に現れたという化け狐。",
+    "region": "中部",
+    "prefecture_id": "aichi"
+  },
+  {
+    "id": 24,
+    "name": "鈴鹿御前",
+    "image": "img/suzuka-gozen.png",
+    "description": "三重県の鈴鹿山に住んでいたとされる絶世の美女の鬼。",
+    "region": "近畿",
+    "prefecture_id": "mie"
+  },
+  {
+    "id": 25,
+    "name": "大百足",
+    "image": "img/omukade.png",
+    "description": "滋賀県の三上山に住んでいたという巨大な百足の妖怪。",
+    "region": "近畿",
+    "prefecture_id": "shiga"
+  },
+  {
+    "id": 26,
+    "name": "酒呑童子",
+    "image": "img/shuten-doji.png",
+    "description": "京都府の大江山に住んでいたとされる鬼の頭領。",
+    "region": "近畿",
+    "prefecture_id": "kyoto"
+  },
+  {
+    "id": 27,
+    "name": "ぬらりひょん",
+    "image": "img/nurarihyon.png",
+    "description": "大阪の旧家に勝手に入り込むと言われる、妖怪の総大将。",
+    "region": "近畿",
+    "prefecture_id": "osaka"
+  },
+  {
+    "id": 28,
+    "name": "長壁姫",
+    "image": "img/osakabehime.png",
+    "description": "兵庫県の姫路城に住むという妖怪。",
+    "region": "近畿",
+    "prefecture_id": "hyogo"
+  },
+  {
+    "id": 29,
+    "name": "元興寺",
+    "image": "img/gagoze.png",
+    "description": "奈良県の元興寺に現れたとされる鬼。",
+    "region": "近畿",
+    "prefecture_id": "nara"
+  },
+  {
+    "id": 30,
+    "name": "八咫烏",
+    "image": "img/yatagarasu.png",
+    "description": "和歌山県の空を飛ぶという、3本足の烏の妖怪。",
+    "region": "近畿",
+    "prefecture_id": "wakayama"
+  },
+  {
+    "id": 31,
+    "name": "七尋女",
+    "image": "img/nanahiro-onna.png",
+    "description": "鳥取県の海岸に現れるという、非常に背の高い女性の妖怪。",
+    "region": "中国",
+    "prefecture_id": "tottori"
+  },
+  {
+    "id": 32,
+    "name": "八岐大蛇",
+    "image": "img/yamata-no-orochi.png",
+    "description": "島根県の斐伊川に住んでいたとされる、8つの頭と8本の尾を持つ大蛇。",
+    "region": "中国",
+    "prefecture_id": "shimane"
+  },
+  {
+    "id": 33,
+    "name": "温羅の鬼",
+    "image": "img/ura-no-oni.png",
+    "description": "岡山県の鬼ノ城に住んでいたとされる鬼。",
+    "region": "中国",
+    "prefecture_id": "okayama"
+  },
+  {
+    "id": 34,
+    "name": "おさん姫",
+    "image": "img/osan-hime.png",
+    "description": "広島県三次市に伝わる、怨霊となった姫。",
+    "region": "中国",
+    "prefecture_id": "hiroshima"
+  },
+  {
+    "id": 35,
+    "name": "耳なし芳一",
+    "image": "img/miminashi-hoichi.png",
+    "description": "山口県の阿弥陀寺にいたという、琵琶法師の幽霊。",
+    "region": "中国",
+    "prefecture_id": "yamaguchi"
+  },
+  {
+    "id": 36,
+    "name": "夜行さん",
+    "image": "img/yagyo-san.png",
+    "description": "徳島県の山道に現れるという、首のない馬に乗った鬼。",
+    "region": "四国",
+    "prefecture_id": "tokushima"
+  },
+  {
+    "id": 37,
+    "name": "手洗い鬼",
+    "image": "img/tearai-oni.png",
+    "description": "香川県の海岸で手を洗うという巨人。",
+    "region": "四国",
+    "prefecture_id": "kagawa"
+  },
+  {
+    "id": 38,
+    "name": "牛鬼",
+    "image": "img/ushi-oni.png",
+    "description": "愛媛県の宇和島の海に住むという、牛と鬼の妖怪。",
+    "region": "四国",
+    "prefecture_id": "ehime"
+  },
+  {
+    "id": 39,
+    "name": "七人ミサキ",
+    "image": "img/shichinin-misaki.png",
+    "description": "高知県の海岸に現れるという、7人組の怨霊。",
+    "region": "四国",
+    "prefecture_id": "kochi"
+  },
+  {
+    "id": 40,
+    "name": "塗壁",
+    "image": "img/nurikabe.png",
+    "description": "福岡県の暗い道で、人の行く手を阻むという壁の妖怪。",
+    "region": "九州・沖縄",
+    "prefecture_id": "fukuoka"
+  },
+  {
+    "id": 41,
+    "name": "化け猫",
+    "image": "img/bakeneko.png",
+    "description": "佐賀県の家に現れるという、年老いた猫が化けた妖怪。",
+    "region": "九州・沖縄",
+    "prefecture_id": "saga"
+  },
+  {
+    "id": 42,
+    "name": "磯撫で",
+    "image": "img/isonade.png",
+    "description": "長崎県近海に現れるという、尾びれで人を撫でるように襲う巨大な魚の妖怪。",
+    "region": "九州・沖縄",
+    "prefecture_id": "nagasaki"
+  },
+  {
+    "id": 43,
+    "name": "磯女",
+    "image": "img/iso-onna.png",
+    "description": "熊本県の岩場に現れるという、濡れた髪の長い女性の妖怪。",
+    "region": "九州・沖縄",
+    "prefecture_id": "kumamoto"
+  },
+  {
+    "id": 44,
+    "name": "夜刀神",
+    "image": "img/yatonokami.png",
+    "description": "大分県の野に現れるという、蛇神。",
+    "region": "九州・沖縄",
+    "prefecture_id": "oita"
+  },
+  {
+    "id": 45,
+    "name": "ひょうすべ",
+    "image": "img/hyosube.png",
+    "description": "宮崎県の森に住むという、毛むくじゃらの妖怪。",
+    "region": "九州・沖縄",
+    "prefecture_id": "miyazaki"
+  },
+  {
+    "id": 46,
+    "name": "一反木綿",
+    "image": "img/ittan-momen.png",
+    "description": "鹿児島県の夜空を飛ぶという、一反の布の妖怪。",
+    "region": "九州・沖縄",
+    "prefecture_id": "kagoshima"
+  },
+  {
+    "id": 47,
+    "name": "キジムナー",
+    "image": "img/kijimuna.png",
+    "description": "沖縄県のガジュマルの木に住むという、赤い髪の子供の妖怪。",
+    "region": "九州・沖縄",
+    "prefecture_id": "okinawa"
+  }
+]
