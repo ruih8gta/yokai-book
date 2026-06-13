@@ -1,67 +1,66 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mapContainer = document.getElementById('map-container');
-    const yokaiCardContainer = document.getElementById('yokai-card-container');
-    let yokaiData = {}; // 妖怪データを格納するオブジェクト
+    const cardContainer = document.getElementById('yokai-card-container');
+    let yokaiData = {};
 
-    // JSONファイルから妖怪データを取得
+    // 妖怪データ取得（prefecture_id をキーに）
     fetch('yokai.json')
-        .then(response => response.json())
+        .then(res => res.json())
         .then(data => {
-            // 扱いやすいように、prefecture_idをキーにしたオブジェクトに変換
-            data.forEach(yokai => {
-                yokaiData[yokai.prefecture_id] = yokai;
-            });
-            console.log('妖怪データをAPIから取得しました。', yokaiData);
+            data.forEach(y => { yokaiData[y.prefecture_id] = y; });
         })
-        .catch(error => console.error('妖怪データの取得に失敗しました:', error));
+        .catch(err => console.error('妖怪データの取得に失敗しました:', err));
 
-
-    // SVG地図データを読み込んで表示
+    // SVG地図を読み込み
     fetch('map-full.svg')
-        .then(response => response.text())
-        .then(svgData => {
-            mapContainer.innerHTML = svgData;
-            console.log('SVGデータが挿入されました。');
-            addEventListenersToPrefectures();
+        .then(res => res.text())
+        .then(svg => {
+            mapContainer.innerHTML = svg;
+            addPrefectureListeners();
         })
-        .catch(error => {
-            console.error('地図データの読み込みに失敗しました:', error);
+        .catch(err => {
+            console.error('地図データの読み込みに失敗しました:', err);
             mapContainer.innerHTML = '<p>地図を読み込めませんでした。</p>';
         });
 
-    // 各都道府県にイベントリスナーを追加する関数
-    function addEventListenersToPrefectures() {
+    function addPrefectureListeners() {
         const prefectures = document.querySelectorAll('#map-container .prefecture');
-        console.log('取得した都道府県の数:', prefectures.length);
-        prefectures.forEach(prefecture => {
-            const prefectureId = prefecture.id;
-            console.log('都道府県ID:', prefectureId);
+        prefectures.forEach(pref => {
+            pref.addEventListener('click', () => {
+                // 選択ハイライト
+                prefectures.forEach(p => p.classList.remove('selected'));
+                pref.classList.add('selected');
 
-            prefecture.addEventListener('click', () => {
-                let prefectureId = '';
-                for (const key in yokaiData) {
-                    if (prefecture.classList.contains(key)) {
-                        prefectureId = key;
-                        break;
-                    }
+                // どの prefecture_id か判定
+                let key = '';
+                for (const id in yokaiData) {
+                    if (pref.classList.contains(id) || pref.id === id) { key = id; break; }
                 }
-
-                console.log(prefectureId + 'がクリックされました。');
-                if (yokaiData[prefectureId]) {
-                    showYokaiName(yokaiData[prefectureId]);
-                } else {
-                    yokaiCardContainer.innerHTML = '<p>この都道府県には妖怪データがありません。</p>';
-                    yokaiCardContainer.classList.remove('hidden');
-                }
+                showCard(yokaiData[key]);
             });
         });
     }
 
-    // 妖怪の名前を表示する関数
-    function showYokaiName(yokai) {
-        yokaiCardContainer.innerHTML = `
-            <h3>${yokai.name}</h3>
-        `;
-        yokaiCardContainer.classList.remove('hidden');
+    function showCard(yokai) {
+        if (yokai) {
+            const media = yokai.image
+                ? `<div class="map-card-media"><img src="${yokai.image}" alt="${yokai.name}"></div>`
+                : `<div class="map-card-noimg">画像準備中</div>`;
+            cardContainer.innerHTML = `
+                ${media}
+                <div class="map-card-body">
+                    <span class="map-card-region">${yokai.region}</span>
+                    <h3 class="map-card-name">${yokai.name}</h3>
+                    <div class="map-card-rule"></div>
+                    <p class="map-card-desc">${yokai.description}</p>
+                </div>
+            `;
+        } else {
+            cardContainer.innerHTML = `<p class="map-card-empty">この地に伝わる妖怪は、まだ記録されていない。</p>`;
+        }
+        cardContainer.classList.remove('hidden');
+        // 再アニメーション
+        cardContainer.classList.remove('show');
+        requestAnimationFrame(() => requestAnimationFrame(() => cardContainer.classList.add('show')));
     }
 });

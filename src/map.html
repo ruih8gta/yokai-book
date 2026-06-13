@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>妖怪マップ</title>
+    <title>妖怪マップ — 百鬼夜行</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="map.style.css">
 </head>
 <body>
-    <header>
-        <h1>日本妖怪マップ</h1>
+    <div class="bg-fx" aria-hidden="true">
+        <div class="fog fog-1"></div>
+        <div class="fog fog-2"></div>
+    </div>
+
+    <header class="site-header">
+        <a href="index.html" class="brand">妖怪マップ</a>
         <nav>
-            <a href="index.html">妖怪図鑑を見る</a>
+            <a href="index.html" class="nav-link"><span class="nav-mark">⛩</span> 妖怪図鑑</a>
         </nav>
     </header>
+
     <main>
+        <p class="map-hint">都道府県をえらぶと、その地にゆかりの妖怪が現れる。</p>
         <div id="map-container">
-            <!-- ここにSVGの日本地図がJavaScriptによって挿入されます -->
+            <!-- SVGの日本地図をJSで挿入 -->
         </div>
         <div id="yokai-card-container" class="hidden">
-            <!-- 妖怪カードがここに表示されます -->
+            <!-- 妖怪カードを表示 -->
         </div>
     </main>
-    <script src="map.js"></script>
+
     <footer>
-        <p>&copy; 2025 妖怪マップ</p>
+        <p>&copy; 2025 妖怪図鑑 — 百鬼夜行</p>
     </footer>
+
+    <script src="map.js"></script>
 </body>
 </html>

@@ -3,27 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>妖怪図鑑</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>妖怪図鑑 — 百鬼夜行</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>妖怪図鑑</h1>
+    <!-- 背景の霧・人魂レイヤー -->
+    <div class="bg-fx" aria-hidden="true">
+        <div class="fog fog-1"></div>
+        <div class="fog fog-2"></div>
+        <div id="hitodama-layer"></div>
+    </div>
+
+    <header class="site-header">
+        <a href="index.html" class="brand">妖怪図鑑</a>
         <nav>
-            <a href="map.html">妖怪マップを見る</a>
+            <a href="map.html" class="nav-link"><span class="nav-mark">⛩</span> 妖怪マップ</a>
         </nav>
     </header>
-    <main>
-        <div id="yokai-list-container" class="yokai-list">
-            <!-- 妖怪の一覧がここにJavaScriptによって挿入されます -->
+
+    <!-- ヒーロー -->
+    <section class="hero">
+        <p class="hero-kicker">日 本 全 国 ・ 妖 怪 名 鑑</p>
+        <h1 class="hero-title" aria-label="百鬼夜行">
+            <span>百</span><span class="accent">鬼</span><span>夜</span><span class="accent">行</span>
+        </h1>
+        <p class="hero-sub">闇に潜むものたちの記録を、ひもとく。</p>
+        <a href="#zukan" class="hero-cta">図鑑をめくる ↓</a>
+    </section>
+
+    <main id="zukan">
+        <!-- 操作バー -->
+        <div class="controls">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="妖怪を探す（名前・特徴）" autocomplete="off">
+            </div>
+            <div id="region-filters" class="region-filters">
+                <!-- 地方フィルターをJSで生成 -->
+            </div>
+            <p id="result-count" class="result-count"></p>
         </div>
+
+        <div id="yokai-list-container" class="yokai-list">
+            <!-- 妖怪カードをJSで生成 -->
+        </div>
+        <p id="empty-state" class="empty-state hidden">該当する妖怪は見つかりませんでした。</p>
     </main>
+
+    <!-- 詳細モーダル -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modal-close" aria-label="閉じる">✕</button>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 妖怪図鑑</p>
+        <p>&copy; 2025 妖怪図鑑 — 百鬼夜行</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
