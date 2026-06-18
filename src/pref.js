@@ -82,4 +82,19 @@ document.addEventListener('DOMContentLoaded', () => {
         detail.innerHTML = `
             <article class="kd-card">
                 ${media}
-     
+                <div class="kd-body">
+                    <span class="kd-place">${prefName}<span class="kd-place-yomi">${yokai.region || ''}</span></span>
+                    <h2 class="kd-name">${yokai.name}</h2>
+                    <div class="kd-rule"></div>
+                    <p class="kd-story">${yokai.description || ''}</p>
+                </div>
+            </article>
+        `;
+        detail.classList.remove('show');
+        requestAnimationFrame(() => requestAnimationFrame(() => detail.classList.add('show')));
+
+        if (window.matchMedia('(max-width: 820px)').matches) {
+            detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+});

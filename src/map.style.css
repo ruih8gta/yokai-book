@@ -153,4 +153,107 @@ footer {
 /* ============================================
    京都府 伝承マップ
    ============================================ */
-.kyo
+.kyoto-main { padding: 8px 16px 32px; }
+.kyoto-layout {
+    display: flex; gap: 28px; align-items: flex-start;
+    width: 100%; max-width: 1120px; margin: 10px auto 0;
+}
+.kyoto-map-wrap {
+    flex: 0 0 46%; max-width: 520px; position: relative;
+}
+#kyoto-map, #pref-map {
+    width: 100%; height: auto; display: block;
+    filter: drop-shadow(0 14px 40px rgba(0,0,0,0.55));
+}
+.kyoto-land {
+    fill: url(#landGrad);
+    stroke: var(--gold); stroke-width: 1.5; stroke-opacity: 0.55;
+    stroke-linejoin: round;
+}
+.kyoto-compass {
+    position: absolute; top: 6px; right: 10px; margin: 0;
+    color: var(--muted); letter-spacing: 0.2em; font-size: 0.8rem;
+}
+
+/* ピン */
+.pin { cursor: pointer; }
+.pin-pulse {
+    fill: var(--vermilion); opacity: 0;
+    transform-box: fill-box; transform-origin: center;
+    animation: pinPulse 2.6s ease-out infinite; animation-delay: var(--d, 0s);
+}
+@keyframes pinPulse {
+    0%   { opacity: 0.45; transform: scale(0.5); }
+    70%  { opacity: 0;    transform: scale(2.6); }
+    100% { opacity: 0;    transform: scale(2.6); }
+}
+.pin-body {
+    fill: var(--vermilion); stroke: #f3ddc0; stroke-width: 1.2;
+    filter: url(#pinGlow);
+    transition: fill 0.25s, transform 0.2s;
+    transform-box: fill-box; transform-origin: center bottom;
+}
+.pin-dot { fill: #fff4e2; }
+.pin-label {
+    fill: var(--paper); font-family: 'Shippori Mincho', serif;
+    font-size: 15px; font-weight: 700; text-anchor: middle;
+    paint-order: stroke; stroke: #0c0c0e; stroke-width: 4px; stroke-linejoin: round;
+    letter-spacing: 0.06em; pointer-events: none;
+}
+.pin:hover .pin-body, .pin:focus .pin-body { fill: #e8854a; transform: translateY(-3px) scale(1.08); }
+.pin:focus { outline: none; }
+.pin:focus .pin-label { fill: var(--gold); }
+.pin.active .pin-body { fill: var(--gold); }
+.pin.active .pin-dot { fill: #3a2a12; }
+.pin.active .pin-label { fill: var(--gold); }
+
+/* 詳細パネル */
+.kyoto-detail {
+    flex: 1 1 auto; min-height: 360px;
+    border: 1px solid var(--line); border-radius: 6px;
+    background: rgba(18,16,12,0.72); backdrop-filter: blur(4px);
+    transition: opacity 0.5s, transform 0.5s;
+    overflow: hidden;
+}
+.kyoto-detail.show { opacity: 1; transform: translateY(0); }
+.kyoto-detail-placeholder {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    height: 100%; min-height: 360px; color: var(--muted);
+    letter-spacing: 0.14em; line-height: 2; text-align: center;
+}
+.kyoto-ph-mark { font-size: 2.4rem; color: var(--vermilion); opacity: 0.6; margin-bottom: 14px; }
+
+.kd-card { display: flex; flex-direction: column; }
+.kd-media { width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: var(--panel-2); position: relative; }
+.kd-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.kd-media::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(to bottom, transparent 55%, rgba(18,16,12,0.95) 100%);
+    pointer-events: none;
+}
+.kd-media.noimg {
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); letter-spacing: 0.2em; font-size: 0.9rem; aspect-ratio: 16 / 10;
+}
+.kd-media.noimg::after { display: none; }
+.kd-body { padding: 22px 26px 28px; }
+.kd-place {
+    display: inline-block; font-size: 0.78rem; letter-spacing: 0.22em;
+    color: var(--gold);
+}
+.kd-place-yomi { margin-left: 0.6em; color: var(--muted); font-size: 0.72rem; letter-spacing: 0.1em; }
+.kd-name { font-size: 1.9rem; font-weight: 800; margin: 8px 0 0; letter-spacing: 0.05em; }
+.kd-yomi { margin-left: 0.7em; font-size: 0.82rem; color: var(--muted); font-weight: 500; letter-spacing: 0.12em; }
+.kd-rule { width: 40px; height: 2px; background: var(--vermilion); margin: 14px 0; }
+.kd-summary { font-size: 1.02rem; color: var(--paper); margin: 0 0 12px; letter-spacing: 0.04em; }
+.kd-story { font-size: 0.92rem; line-height: 2; color: var(--muted); margin: 0; letter-spacing: 0.03em; }
+
+@media (max-width: 820px) {
+    .kyoto-layout { flex-direction: column; align-items: center; }
+    .kyoto-map-wrap { flex-basis: auto; width: min(440px, 92%); max-width: 440px; }
+    .kyoto-detail { width: min(440px, 92%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+}
