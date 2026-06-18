@@ -9,30 +9,30 @@
 *   **岩手県:** 座敷童子（ざしきわらし）
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Zashiki-warashi, inside an old traditional house in Iwate, high detail, a child-like yokai from Iwate Prefecture that is said to bring wealth to the house.`
 *   **宮城県:** 提灯小僧（ちょうちんこぞう）
-    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Chochin-kozo, walking on a dark path in Miyagi, high detail, a child-like yokai holding a lantern.`
+    *   画像生成プロンプト: `A photorealistic image of a Japanese Yokai Chochin-kozo: a small child with a normal human head and face, smiling mischievously, HOLDING a glowing round red paper lantern (chochin) in his hand. The lantern is held in his hand, NOT his head. Walking on a dark path in Miyagi at night, eerie, high detail.`
 *   **秋田県:** なまはげ
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Namahage, standing in the snow in Akita, high detail, a messenger of the gods that appears in a folk event in Akita Prefecture.`
 *   **山形県:** 雪女
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Yuki-onna, in a snowstorm in the mountains of Yamagata, high detail, a beautiful female yokai who is said to appear on snowy days.`
 *   **福島県:** 朱の盆（しゅのぼん）
-    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Shunobon, standing in a spooky forest in Fukushima, high detail, a red-faced yokai from Fukushima Prefecture.`
+    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Shunobon, standing in a spooky forest in Fukushima, high detail, a yokai with a bright crimson RED face and red skin, vivid red complexion, glaring menacing expression.`
 
 ## 関東地方
 
 *   **茨城県:** イクチ
-    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Ikuchi, on the coast of Ibaraki, high detail, a long, eel-like yokai that is said to appear in the sea of Ibaraki Prefecture.`
+    *   画像生成プロンプト: `A photorealistic image of a Japanese Yokai Ikuchi: an enormous, extremely long eel-like sea serpent monster with a slippery snake-like elongated body coiling across the ocean surface off the coast of Ibaraki. A giant eel creature, NOT humanoid, no arms or legs, glistening dark wet scales, eerie atmosphere, high detail.`
 *   **栃木県:** 九尾の狐（きゅうびのきつね）
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Kyubi no Kitsune, near the Sessho-seki stone in Tochigi, high detail, a nine-tailed fox yokai that is said to have appeared in Nasuno, Tochigi Prefecture.`
 *   **群馬県:** 天狗（てんぐ）
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Tengu, in the mountains of Gunma, high detail, a yokai with supernatural powers that is said to live in the mountains of Gunma Prefecture.`
 *   **埼玉県:** 夜道怪（やどうかい）
-    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Yadokai, on a lonely road in Saitama, high detail, a one-eyed giant from Saitama Prefecture.`
+    *   画像生成プロンプト: `A photorealistic image of a Japanese Yokai Yadokai: a huge towering one-eyed giant cyclops ogre with only ONE single large eye in the center of its forehead, no other eyes, standing on a lonely dark road in Saitama at night, menacing, eerie, high detail.`
 *   **千葉県:** 二口女（ふたくちおんな）
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Futakuchi-onna, in a traditional Japanese house in Chiba, high detail, a female yokai with a mouth on the back of her head from Chiba Prefecture.`
 *   **東京都:** 一つ目小僧（ひとつめこぞう）
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Hitotsume-kozo, on a street in old Tokyo, high detail, a child-like yokai with only one eye on its forehead.`
 *   **神奈川県:** 舞首（まいくび）
-    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Maikubi, flying over the sea in Kanagawa, high detail, a yokai of three dancing heads that is said to appear over the sea of Kanagawa Prefecture.`
+    *   画像生成プロンプト: `A photorealistic image of a Japanese Yokai Maikubi: THREE separate severed human heads with wild hair and fierce angry expressions, floating and dancing in the air above the dark night sea of Kanagawa. Exactly three flying disembodied heads, no bodies, eerie supernatural atmosphere, high detail.`
 
 ## 中部地方
 
@@ -43,7 +43,7 @@
 *   **石川県:** アマメハギ
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Amamehagi, by an irori fireplace in Ishikawa, high detail, a yokai that is said to appear by the irori fireplace in Ishikawa Prefecture.`
 *   **福井県:** 八百比丘尼（やおびくに）
-    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Yao-bikuni, on the coast of Fukui, high detail, a Buddhist nun who is said to have become immortal by eating the flesh of a mermaid and appears on the coast of Fukui Prefecture.`
+    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Yao-bikuni: a YOUNG, eternally youthful and beautiful Buddhist nun with a serene, smooth pale face, who became immortal by eating the flesh of a mermaid and never ages despite being 800 years old, wearing simple white nun's robes and holding prayer beads, standing on the rocky coast of Fukui. She looks young and ageless, NOT old. High detail.`
 *   **山梨県:** 蟹坊主（かにぼうず）
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Kani-bozu, in a temple in Yamanashi, high detail, a giant crab yokai that is said to have appeared in a temple in Yamanashi Prefecture.`
 *   **長野県:** 山彦（やまびこ）
@@ -70,7 +70,7 @@
 *   **奈良県:** 元興寺（がごぜ）
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Gagoze, at Gangoji temple in Nara, high detail, an oni (demon) that is said to have appeared at Gangoji temple in Nara Prefecture.`
 *   **和歌山県:** 八咫烏（やたがらす）
-    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Yatagarasu, flying in the sky of Wakayama, high detail, a three-legged crow yokai that is said to fly in the sky of Wakayama Prefecture.`
+    *   画像生成プロンプト: `A photorealistic image of a Japanese Yokai Yatagarasu: a large sacred black crow with exactly THREE legs (3 legs, clearly visible and countable), standing on a rock in the bright sky over the mountains of Wakayama. The mythical three-legged crow, high detail. Make sure all three legs are clearly shown.`
 
 ## 中国地方
 
@@ -88,7 +88,7 @@
 ## 四国地方
 
 *   **徳島県:** 夜行さん（やぎょうさん）
-    *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Yagyo-san, on a mountain path in Tokushima, high detail, an oni (demon) riding a headless horse that is said to appear on a mountain path in Tokushima Prefecture.`
+    *   画像生成プロンプト: `A photorealistic image of a Japanese Yokai Yagyo-san: a fierce red-faced oni demon with horns riding a HEADLESS horse. The horse's neck ends abruptly with absolutely NO head. Galloping on a dark mountain path in Tokushima at night, eerie supernatural atmosphere, high detail.`
 *   **香川県:** 手洗い鬼（てあらいおに）
     *   画像生成プロンプト: `A photorealistic portrait of a Japanese Yokai Tearai-oni, on the coast of Kagawa, high detail, a giant who is said to wash his hands on the coast of Kagawa Prefecture.`
 *   **愛媛県:** 牛鬼（うしおに）

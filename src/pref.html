@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖怪伝承マップ — 百鬼夜行</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map.style.css">
+</head>
+<body>
+    <div class="bg-fx" aria-hidden="true">
+        <div class="fog fog-1"></div>
+        <div class="fog fog-2"></div>
+    </div>
+
+    <header class="site-header">
+        <a href="map.html" class="brand" id="pref-brand">妖怪伝承</a>
+        <nav>
+            <a href="map.html" class="nav-link"><span class="nav-mark">◁</span> 妖怪マップへ</a>
+            <a href="index.html" class="nav-link"><span class="nav-mark">⛩</span> 妖怪図鑑</a>
+        </nav>
+    </header>
+
+    <main class="kyoto-main">
+        <p class="map-hint" id="pref-intro"></p>
+
+        <div class="kyoto-layout">
+            <div class="kyoto-map-wrap">
+                <div id="pref-map-container"></div>
+                <p class="kyoto-compass">北 ▲</p>
+            </div>
+
+            <aside class="kyoto-detail" id="pref-detail">
+                <div class="kyoto-detail-placeholder" id="pref-placeholder">
+                    <span class="kyoto-ph-mark">⛩</span>
+                    <p>地図の標(しるべ)を選ぶと<br>その地の妖怪が現れる。</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 妖怪図鑑 — 百鬼夜行</p>
+    </footer>
+
+    <script src="pref.js"></script>
+</body>
+</html>

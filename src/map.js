@@ -36,6 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 for (const id in yokaiData) {
                     if (pref.classList.contains(id) || pref.id === id) { key = id; break; }
                 }
+
+                // 京都は専用の伝承マップ（複数伝承）へ
+                if (key === 'kyoto' || pref.classList.contains('kyoto')) {
+                    window.location.href = 'kyoto.html';
+                    return;
+                }
+
+                // その他の県は共通の県マップページへ
+                if (key) {
+                    window.location.href = `pref.html?p=${key}`;
+                    return;
+                }
+
                 showCard(yokaiData[key]);
             });
         });
