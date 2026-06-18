@@ -37,9 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (pref.classList.contains(id) || pref.id === id) { key = id; break; }
                 }
 
-                // 京都は専用の伝承マップ（複数伝承）へ
+                // 京都・栃木は専用の伝承マップ（複数伝承）へ
                 if (key === 'kyoto' || pref.classList.contains('kyoto')) {
                     window.location.href = 'kyoto.html';
+                    return;
+                }
+                if (key === 'tochigi' || pref.classList.contains('tochigi')) {
+                    window.location.href = 'tochigi.html';
                     return;
                 }
 
@@ -72,8 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
             cardContainer.innerHTML = `<p class="map-card-empty">この地に伝わる妖怪は、まだ記録されていない。</p>`;
         }
         cardContainer.classList.remove('hidden');
-        // 再アニメーション
-        cardContainer.classList.remove('show');
-        requestAnimationFrame(() => requestAnimationFrame(() => cardContainer.classList.add('show')));
-    }
-});
+    
