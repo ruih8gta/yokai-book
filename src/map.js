@@ -76,4 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cardContainer.innerHTML = `<p class="map-card-empty">この地に伝わる妖怪は、まだ記録されていない。</p>`;
         }
         cardContainer.classList.remove('hidden');
-    
+        // 再アニメーション
+        cardContainer.classList.remove('show');
+        requestAnimationFrame(() => requestAnimationFrame(() => cardContainer.classList.add('show')));
+    }
+});

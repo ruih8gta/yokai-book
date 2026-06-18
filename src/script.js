@@ -23,11 +23,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.12 });
 
+    // 基本データ(各県1体) + 拡張済みの県(複数伝承)をまとめて読み込み、
+    // 登録されている妖怪をすべて図鑑に表示する
     fetch('./yokai.json')
         .then(res => res.json())
-        .then(data => {
-            allYokai = data;
-            buildRegionFilters(data);
+        .then(async (base) => {
+            let richIds = [];
+            try {
+                richIds = await fetch('./legend_prefectures.json').then(r => r.ok ? r.json() : []);
+            } catch (e) { richIds = []; }
+
+            // 県ID → 地方名 の対応（拡張伝承に地方を付与するため）
+            const regionByPref = {};
+            base.forEach(y => { regionByPref[y.prefecture_id] = y.region; });
+
+            // 拡張済みの県の伝承データを取得
+            const richSets = await Promise.all(richIds.map(id =>
+                fetch(`./${id}.json`).then(r => r.ok ? r.json() : null)
+                    .then(d => ({ id, d })).catch(() => ({ id, d: null }))
+            ));
+
+            // 拡張済みの県は基本の1体を除き、複数伝承で置き換える
+            const richIdSet = new Set(richSets.filter(s => s.d).map(s => s.id));
+            const list = base.filter(y => !richIdSet.has(y.prefecture_id));
+
+            richSets.forEach(({ id, d }) => {
+                if (!d || !Array.isArray(d.legends)) return;
+                d.legends.forEach(lg => {
+                    list.push({
+                        name: lg.name,
+                        region: regionByPref[id] || d.prefecture || '',
+                        description: lg.summary || lg.story || '',
+                        story: lg.story || '',
+                        image: lg.image,
+                        prefecture_id: id,
+                        place: lg.place || ''
+                    });
+                });
+            });
+
+            allYokai = list;
+            buildRegionFilters(list);
             render();
         })
         .catch(err => {
@@ -107,10 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
         modalBody.innerHTML = `
             ${media}
             <div class="modal-text">
-                <span class="modal-region">${yokai.region}</span>
+                <span class="modal-region">${yokai.region}${yokai.place ? ' ・ ' + yokai.place : ''}</span>
                 <h2 class="modal-name">${yokai.name}</h2>
                 <div class="modal-rule"></div>
-                <p class="modal-desc">${yokai.description}</p>
+                <p class="modal-desc">${yokai.story || yokai.description}</p>
             </div>
         `;
         modalOverlay.classList.remove('hidden');
