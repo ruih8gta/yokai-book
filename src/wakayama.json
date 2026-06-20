@@ -1,0 +1,46 @@
+{
+  "prefecture": "和歌山県",
+  "prefecture_yomi": "わかやま",
+  "intro": "熊野の八咫烏、道成寺の清姫、果無の一本ダタラが棲む。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "yatagarasu-wakayama",
+      "name": "八咫烏",
+      "yomi": "やたがらす",
+      "place": "熊野",
+      "place_yomi": "くまの",
+      "label": "熊野",
+      "x": 353.7,
+      "y": 277.4,
+      "image": "img/yatagarasu.png",
+      "summary": "熊野の空を飛ぶ三本足の烏。",
+      "story": "熊野の空を飛ぶという、三本足の烏の妖怪。神武天皇を導いた神の使いとされ、熊野三山の神として今も篤く祀られる。"
+    },
+    {
+      "id": "kiyohime",
+      "name": "清姫の大蛇",
+      "yomi": "きよひめのだいじゃ",
+      "place": "道成寺",
+      "place_yomi": "どうじょうじ",
+      "label": "道成寺",
+      "x": 137.9,
+      "y": 262.0,
+      "image": "img/wakayama/kiyohime.png",
+      "summary": "裏切りに大蛇となった女。",
+      "story": "裏切った僧・安珍を追って大蛇と化した女・清姫。道成寺の鐘に逃げ込んだ安珍を、鐘ごと焼き殺したと伝わる。"
+    },
+    {
+      "id": "ippondatara",
+      "name": "一本ダタラ",
+      "yomi": "いっぽんだたら",
+      "place": "果無山脈",
+      "place_yomi": "はてなしさんみゃく",
+      "label": "果無",
+      "x": 293.5,
+      "y": 298.0,
+      "image": "img/ishikawa/mikoshi-nyudo.png",
+      "summary": "一つ目一本足の山の怪。",
+      "story": "果無山脈などの深山に棲むという、一つ目で一本足の妖怪。師走の決まった日に現れ、出会った者を喰らうと恐れられた。"
+    }
+  ]
+}

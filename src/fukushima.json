@@ -1,0 +1,46 @@
+{
+  "prefecture": "福島県",
+  "prefecture_yomi": "ふくしま",
+  "intro": "会津の朱の盆、二本松の鬼婆、猪苗代の龍が棲む。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "shunobon-fukushima",
+      "name": "朱の盆",
+      "yomi": "しゅのぼん",
+      "place": "会津",
+      "place_yomi": "あいづ",
+      "label": "会津",
+      "x": 230.7,
+      "y": 200.5,
+      "image": "img/shunobon.png",
+      "summary": "顔の赤い妖怪。",
+      "story": "福島・会津に伝わる、顔の真っ赤な妖怪。夜道で人を脅かし、振り返らせて正体を見せ、恐れさせたと伝わる。"
+    },
+    {
+      "id": "adachigahara",
+      "name": "安達ヶ原の鬼婆",
+      "yomi": "あだちがはらのおにばば",
+      "place": "二本松",
+      "place_yomi": "にほんまつ",
+      "label": "二本松",
+      "x": 362.2,
+      "y": 165.8,
+      "image": "img/fukushima/adachigahara.png",
+      "summary": "旅人を喰らった鬼婆。",
+      "story": "二本松・安達ヶ原に伝わる鬼婆。一夜の宿を貸すふりをして旅人を泊め、夜更けに包丁を研いで襲い、喰らったと伝わる。"
+    },
+    {
+      "id": "inawashiro-ryu",
+      "name": "猪苗代の龍",
+      "yomi": "いなわしろのりゅう",
+      "place": "猪苗代湖",
+      "place_yomi": "いなわしろこ",
+      "label": "猪苗代湖",
+      "x": 273.7,
+      "y": 213.1,
+      "image": "img/saitama/minuma-ryujin.png",
+      "summary": "湖を司る龍神。",
+      "story": "猪苗代湖に棲むという龍神。湖を司り、雨を呼んだ。磐梯山の神とも結びつき、湖と山にまつわる伝説に登場する。"
+    }
+  ]
+}

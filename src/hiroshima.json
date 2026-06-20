@@ -1,0 +1,46 @@
+{
+  "prefecture": "広島県",
+  "prefecture_yomi": "ひろしま",
+  "intro": "三次のおさん姫、宮島の龍神、比婆の山姥が棲む。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "osanhime-hiroshima",
+      "name": "おさん姫",
+      "yomi": "おさんひめ",
+      "place": "三次",
+      "place_yomi": "みよし",
+      "label": "三次",
+      "x": 309.3,
+      "y": 143.3,
+      "image": "img/osan-hime.png",
+      "summary": "怨霊となった姫。",
+      "story": "広島・三次に伝わる、怨霊となった姫。無念の死を遂げ、夜ごと現れて人を惑わせたと伝わる。三次は妖怪物語『稲生物怪録』の地でもある。"
+    },
+    {
+      "id": "itsukushima-ryu",
+      "name": "厳島の龍神",
+      "yomi": "いつくしまのりゅうじん",
+      "place": "宮島",
+      "place_yomi": "みやじま",
+      "label": "宮島",
+      "x": 137.0,
+      "y": 321.1,
+      "image": "img/saitama/minuma-ryujin.png",
+      "summary": "海の宮を守る龍神。",
+      "story": "海上の社・厳島神社を守るという龍神。海を司り、潮の満ち引きを操った。弁財天の使いともいわれ、海の安全を司る。"
+    },
+    {
+      "id": "hiba-yamauba",
+      "name": "比婆の山姥",
+      "yomi": "ひばのやまんば",
+      "place": "比婆山",
+      "place_yomi": "ひばやま",
+      "label": "比婆山",
+      "x": 358.0,
+      "y": 79.6,
+      "image": "img/tochigi/yamauba.png",
+      "summary": "比婆の山に棲む鬼婆。",
+      "story": "比婆山の深山に棲むという山姥。旅人を宿に招いてもてなすふりをし、夜更けに本性を現したと伝わる。"
+    }
+  ]
+}

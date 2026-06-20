@@ -1,0 +1,46 @@
+{
+  "prefecture": "岡山県",
+  "prefecture_yomi": "おかやま",
+  "intro": "鬼ノ城の温羅、瀬戸内の牛鬼、美作の化け狸が現れる。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "ura-okayama",
+      "name": "温羅の鬼",
+      "yomi": "うらのおに",
+      "place": "鬼ノ城",
+      "place_yomi": "きのじょう",
+      "label": "鬼ノ城",
+      "x": 257.2,
+      "y": 295.7,
+      "image": "img/ura-no-oni.png",
+      "summary": "鬼ノ城に住んだ鬼の王。",
+      "story": "鬼ノ城に住んでいたとされる鬼・温羅(うら)。都を脅かしたが、吉備津彦命に討たれた。桃太郎の鬼退治の原型ともいわれる。"
+    },
+    {
+      "id": "ushioni-okayama",
+      "name": "牛鬼",
+      "yomi": "うしおに",
+      "place": "瀬戸内海",
+      "place_yomi": "せとないかい",
+      "label": "瀬戸内",
+      "x": 348.3,
+      "y": 440.3,
+      "image": "img/ushi-oni.png",
+      "summary": "海辺を襲う牛と鬼の妖怪。",
+      "story": "岡山南部の瀬戸内の海辺に現れるという、牛の頭と鬼の体を持つ妖怪。海から這い上がり人を襲うと恐れられた。"
+    },
+    {
+      "id": "bakedanuki-mimasaka",
+      "name": "化け狸",
+      "yomi": "ばけだぬき",
+      "place": "美作",
+      "place_yomi": "みまさか",
+      "label": "美作",
+      "x": 389.8,
+      "y": 199.3,
+      "image": "img/danzaburou-danuki.png",
+      "summary": "人を化かす美作の狸。",
+      "story": "美作の山々に棲むという化け狸。腹鼓を打ち、人や物に化けて旅人を惑わせたと伝わる。"
+    }
+  ]
+}

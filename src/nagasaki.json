@@ -1,0 +1,46 @@
+{
+  "prefecture": "長崎県",
+  "prefecture_yomi": "ながさき",
+  "intro": "近海の磯撫で、島原の河童、五島灘の海坊主が棲む。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "isonade-nagasaki",
+      "name": "磯撫で",
+      "yomi": "いそなで",
+      "place": "近海",
+      "place_yomi": "きんかい",
+      "label": "近海",
+      "x": 301.7,
+      "y": 470.5,
+      "image": "img/isonade.png",
+      "summary": "尾で人を攫う巨大魚。",
+      "story": "長崎の近海に現れるという、巨大な魚の妖怪。鋭い棘のある尾びれで、人を撫でるように海中へ攫っていったと伝わる。"
+    },
+    {
+      "id": "kappa-shimabara",
+      "name": "河童",
+      "yomi": "かっぱ",
+      "place": "島原",
+      "place_yomi": "しまばら",
+      "label": "島原",
+      "x": 491.9,
+      "y": 463.9,
+      "image": "img/tochigi/kappa.png",
+      "summary": "川の淵に棲む水の妖怪。",
+      "story": "島原の川や淵に棲むという水の妖怪。頭の皿の水が乾くと力を失い、泳ぐ者を引き込むと恐れられた。"
+    },
+    {
+      "id": "umibozu-goto",
+      "name": "海坊主",
+      "yomi": "うみぼうず",
+      "place": "五島灘",
+      "place_yomi": "ごとうなだ",
+      "label": "五島灘",
+      "x": 177.1,
+      "y": 426.9,
+      "image": "img/chiba/umibozu.png",
+      "summary": "夜の海に現れる黒い巨人。",
+      "story": "五島灘の夜の海に突然現れる、巨大な黒い坊主頭の妖怪。船を覆い、舟人を海へ引き込もうとしたと伝わる。"
+    }
+  ]
+}

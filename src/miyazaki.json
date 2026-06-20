@@ -1,0 +1,46 @@
+{
+  "prefecture": "宮崎県",
+  "prefecture_yomi": "みやざき",
+  "intro": "森のひょうすべ、高千穂の鬼八、日向灘の龍宮が棲む。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "hyosube-miyazaki",
+      "name": "ひょうすべ",
+      "yomi": "ひょうすべ",
+      "place": "森",
+      "place_yomi": "もり",
+      "label": "森",
+      "x": 224.1,
+      "y": 286.3,
+      "image": "img/hyosube.png",
+      "summary": "森に棲む毛むくじゃらの妖怪。",
+      "story": "宮崎の森に棲むという、毛むくじゃらの妖怪。河童に似て、人に悪さをすると恐れられた。"
+    },
+    {
+      "id": "kihachi",
+      "name": "鬼八",
+      "yomi": "きはち",
+      "place": "高千穂",
+      "place_yomi": "たかちほ",
+      "label": "高千穂",
+      "x": 215.8,
+      "y": 87.1,
+      "image": "img/miyazaki/kihachi.png",
+      "summary": "高千穂を荒らした鬼。",
+      "story": "高千穂に住み、里を荒らしたという鬼・鬼八(きはち)。三毛入野命(みけぬのみこと)に退治されたが、その怨念は霜を降らせるとされ、鎮める祭りが続く。"
+    },
+    {
+      "id": "ryugu-miyazaki",
+      "name": "龍宮の龍",
+      "yomi": "りゅうぐうのりゅう",
+      "place": "日向灘",
+      "place_yomi": "ひゅうがなだ",
+      "label": "日向",
+      "x": 254.7,
+      "y": 343.2,
+      "image": "img/saitama/minuma-ryujin.png",
+      "summary": "海神の宮の龍。",
+      "story": "日向は海幸彦・山幸彦の神話の地。山幸彦が訪れた海神(わたつみ)の宮・龍宮に棲むという龍が、潮の満ち引きを司ったと伝わる。"
+    }
+  ]
+}

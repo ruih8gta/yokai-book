@@ -1,0 +1,46 @@
+{
+  "prefecture": "大分県",
+  "prefecture_yomi": "おおいた",
+  "intro": "野の夜刀神、別府の鬼、海辺の牛鬼が棲む。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "yatonokami-oita",
+      "name": "夜刀神",
+      "yomi": "やとのかみ",
+      "place": "野",
+      "place_yomi": "の",
+      "label": "野",
+      "x": 304.0,
+      "y": 270.3,
+      "image": "img/yatonokami.png",
+      "summary": "野に現れる蛇神。",
+      "story": "大分の野に現れるという蛇神。角を持つ蛇の姿で群れをなし、田を開く人々に祟りをなしたと伝わる。"
+    },
+    {
+      "id": "beppu-oni",
+      "name": "別府の鬼",
+      "yomi": "べっぷのおに",
+      "place": "鬼の岩屋",
+      "place_yomi": "おにのいわや",
+      "label": "別府",
+      "x": 285.5,
+      "y": 237.1,
+      "image": "img/oita/beppu-oni.png",
+      "summary": "岩屋に棲む鬼。",
+      "story": "別府には「鬼の岩屋」と呼ばれる古墳や地獄があり、鬼が棲むと伝わる。火と煙の立ち上る地で、鬼が亡者を責めるとも語られた。"
+    },
+    {
+      "id": "ushioni-oita",
+      "name": "牛鬼",
+      "yomi": "うしおに",
+      "place": "海辺",
+      "place_yomi": "うみべ",
+      "label": "海辺",
+      "x": 432.9,
+      "y": 353.4,
+      "image": "img/ushi-oni.png",
+      "summary": "海辺を襲う牛と鬼の妖怪。",
+      "story": "大分の海辺に現れるという、牛の頭と鬼の体を持つ妖怪。豊後水道沿いに出没の伝承が残る。"
+    }
+  ]
+}

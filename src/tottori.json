@@ -1,0 +1,46 @@
+{
+  "prefecture": "鳥取県",
+  "prefecture_yomi": "とっとり",
+  "intro": "海岸の背高女、西の牛鬼、大山の天狗が現れる。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "nanahiro-onna-tottori",
+      "name": "七尋女",
+      "yomi": "ななひろおんな",
+      "place": "海岸",
+      "place_yomi": "かいがん",
+      "label": "海岸",
+      "x": 425.4,
+      "y": 88.8,
+      "image": "img/nanahiro-onna.png",
+      "summary": "非常に背の高い女の妖怪。",
+      "story": "鳥取の海岸に現れるという、見上げるほど背の高い女の妖怪。浜辺をさまよい、出会った者を怖れさせたと伝わる。"
+    },
+    {
+      "id": "ushioni-tottori",
+      "name": "牛鬼",
+      "yomi": "うしおに",
+      "place": "西伯の海辺",
+      "place_yomi": "さいはくのうみべ",
+      "label": "西伯",
+      "x": 177.2,
+      "y": 88.8,
+      "image": "img/ushi-oni.png",
+      "summary": "海辺を襲う牛と鬼の妖怪。",
+      "story": "鳥取西部の海辺に現れるという、牛の頭と鬼の体を持つ妖怪。山陰の海岸各地に出没の伝承が残る。"
+    },
+    {
+      "id": "daisen-tengu",
+      "name": "大山の天狗",
+      "yomi": "だいせんのてんぐ",
+      "place": "大山",
+      "place_yomi": "だいせん",
+      "label": "大山",
+      "x": 191.4,
+      "y": 139.4,
+      "image": "img/tengu.png",
+      "summary": "霊峰大山に棲む天狗。",
+      "story": "中国地方の霊峰・大山に棲むという天狗。修験の山として畏れられ、天狗が行者を導き、また戒めたと伝わる。"
+    }
+  ]
+}

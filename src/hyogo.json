@@ -1,0 +1,46 @@
+{
+  "prefecture": "兵庫県",
+  "prefecture_yomi": "ひょうご",
+  "intro": "姫路城には妖姫、瀬戸内には牛鬼、丹波には化け狸が現れる。地に立つ標(しるべ)を選べば、その地の物語が立ちのぼる。",
+  "legends": [
+    {
+      "id": "osakabehime-hyogo",
+      "name": "長壁姫",
+      "yomi": "おさかべひめ",
+      "place": "姫路城",
+      "place_yomi": "ひめじじょう",
+      "label": "姫路城",
+      "x": 158.5,
+      "y": 301.6,
+      "image": "img/osakabehime.png",
+      "summary": "姫路城天守に住む妖姫。",
+      "story": "姫路城の天守に住むという妖怪の姫。年に一度だけ城主と対面し、城の運命を告げたと伝わる。老婆や妖狐の姿ともいわれる。"
+    },
+    {
+      "id": "ushioni-setouchi",
+      "name": "牛鬼",
+      "yomi": "うしおに",
+      "place": "瀬戸内",
+      "place_yomi": "せとうち",
+      "label": "瀬戸内",
+      "x": 225.0,
+      "y": 375.4,
+      "image": "img/ushi-oni.png",
+      "summary": "海辺に現れる牛と鬼の妖怪。",
+      "story": "瀬戸内の海辺に現れるという、牛の頭と鬼の体を持つ凶悪な妖怪。海から這い上がり人を襲うと恐れられた。"
+    },
+    {
+      "id": "bakedanuki-tamba",
+      "name": "化け狸",
+      "yomi": "ばけだぬき",
+      "place": "丹波",
+      "place_yomi": "たんば",
+      "label": "丹波",
+      "x": 263.4,
+      "y": 221.5,
+      "image": "img/danzaburou-danuki.png",
+      "summary": "人を化かす丹波の狸。",
+      "story": "丹波の山々に棲むという化け狸。腹鼓を打ち、人や物に化けて旅人を惑わせた。狐と並ぶ化け上手として知られる。"
+    }
+  ]
+}
