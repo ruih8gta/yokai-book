@@ -26,6 +26,7 @@
 
     <!-- ヒーロー -->
     <section class="hero">
+        <div class="hero-flow" aria-hidden="true"><div class="hero-flow-track"></div></div>
         <p class="hero-kicker">日 本 全 国 ・ 妖 怪 名 鑑</p>
         <h1 class="hero-title" aria-label="百鬼夜行">
             <span>百</span><span class="accent">鬼</span><span>夜</span><span class="accent">行</span>
@@ -66,5 +67,43 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    /* ヒーロー背景：妖怪画像をランダムな順で1列に薄く流す */
+    (function () {
+        var images = [
+            "img/akashita.png","img/amamehagi.png","img/bakeneko.png","img/chochin-kozo.png",
+            "img/daidarabotchi.png","img/danzaburou-danuki.png","img/futakuchi-onna.png","img/gagoze.png",
+            "img/hitotsume-kozo.png","img/hyosube.png","img/ikuchi.png","img/iso-onna.png","img/isonade.png",
+            "img/ittan-momen.png","img/kani-bozu.png","img/kijimuna.png","img/koropokkuru.png",
+            "img/kyubi-no-kitsune.png","img/maikubi.png","img/miminashi-hoichi.png","img/namahage.png",
+            "img/nanahiro-onna.png","img/ningyoshin.png","img/nurarihyon.png","img/nurikabe.png",
+            "img/omukade.png","img/osakabehime.png","img/osan-hime.png","img/otora-gitsune.png",
+            "img/rokurokubi.png","img/ryomen-sukuna.png","img/shichinin-misaki.png","img/shunobon.png",
+            "img/shuten-doji.png","img/suzuka-gozen.png","img/tearai-oni.png","img/tengu.png",
+            "img/ura-no-oni.png","img/ushi-oni.png","img/yadokai.png","img/yagyo-san.png","img/yamabiko.png",
+            "img/yamata-no-orochi.png","img/yao-bikuni.png","img/yatagarasu.png","img/yatonokami.png",
+            "img/yuki-onna.png","img/zashiki-warashi.png",
+            "img/nara/miwa-orochi.png","img/shimane/yomotsu.png","img/ehime/happyaku.png",
+            "img/akita/hachiro.png","img/kagawa/tasaburo.png","img/nagano/momiji.png","img/miyazaki/kihachi.png",
+            "img/hokkaido/mintuchi.png","img/hokkaido/nitne.png","img/okinawa/akamata.png","img/aomori/onigami.png",
+            "img/aomori/osorezan.png","img/oita/beppu-oni.png","img/kumamoto/aso-ryu.png",
+            "img/yamaguchi/iwakuni-hebi.png","img/yamaguchi/heike.png","img/miyagi/akuro.png",
+            "img/kochi/tosa-orochi.png","img/toyama/tateyama-oni.png","img/wakayama/kiyohime.png",
+            "img/fukushima/adachigahara.png","img/tokushima/kincho.png","img/kyoto/nue.png",
+            "img/tochigi/yamauba.png"
+        ];
+        var track = document.querySelector('.hero-flow-track');
+        if (track) {
+            for (var i = images.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var t = images[i]; images[i] = images[j]; images[j] = t;
+            }
+            var seq = images.concat(images);
+            track.innerHTML = seq.map(function (s) {
+                return '<img src="' + s + '" alt="" loading="lazy">';
+            }).join('');
+        }
+    })();
+    </script>
 </body>
 </html>
